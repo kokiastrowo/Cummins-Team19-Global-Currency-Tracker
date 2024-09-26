@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Graph Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Generate Currency Graph</h1>
+        <form action="/generate_graph" method="POST" class="mt-4">
+            <div class="form-group text-left">  <!-- Align inputs to the left -->
+                <label for="currency">Currency (e.g., Indian rupee   (INR)) <br><b>PLEASE REFER TO THE LIST AT THE BOTTOM OF THIS PAGE FOR CURRENCY NAMES</b>:</label>
+                <input type="text" class="form-control" id="currency" name="currency" required>
+            </div>
+            <div class="form-group text-left">
+                <label for="year">Year:</label>
+                <input type="number" class="form-control" id="year" name="year" required>
+            </div>
+            <div class="form-group text-left">
+                <label for="duration">Duration:</label>
+                <select class="form-control" id="duration" name="duration">
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+            </div>
+            <div class="form-group text-left">
+                <label for="start_date">Start Date:</label>
+                <input type="date" class="form-control" id="start_date" name="start_date" required>
+            </div>
+            <div class="form-group text-left">
+                <label for="end_date">End Date:</label>
+                <input type="date" class="form-control" id="end_date" name="end_date" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Generate Graph</button>
+        </form>
+
+        <!-- Paragraph displaying list of currencies -->
+        <div class="mt-5">
+            <h2 class="text-center">Available Currencies</h2>
+            <p class="text-justify">
+                Here are some of the available currencies you can select:
+                <ul>
+                    <li>Algerian dinar (DZD)</li>
+                    <li>Australian dollar (AUD)</li>
+                    <li>Bahrain dinar (BHD)</li>
+                    <li>Brunei dollar (BND)</li>
+                    <li>Bolivar Fuerte (VEF)</li>
+                    <li>Canadian dollar (CAD)</li>
+                    <li>Chilean peso (CLP)</li>
+                    <li>Chinese yuan (CNY)</li>
+                    <li>Colombian peso (COP)</li>
+                    <li>Czech koruna (CZK)</li>
+                    <li>Danish krone (DKK)</li>
+                    <li>Euro (EUR)</li>
+                    <li>Hungarian forint (HUF)</li>
+                    <li>Icelandic krona (ISK)</li>
+                    <li>Indian rupee (INR)</li>
+                    <li>Indonesian rupiah (IDR)</li>
+                    <li>Iranian rial (IRR)</li>
+                    <li>Israeli New Shekel (ILS)</li>
+                    <li>Japanese yen (JPY)</li>
+                    <li>Kazakhstani tenge (KZT)</li>
+                    <li>Korean won (KRW)</li>
+                    <li>Kuwaiti dinar (KWD)</li>
+                    <li>Libyan dinar (LYD)</li>
+                    <li>Malaysian ringgit (MYR)</li>
+                    <li>Mauritian rupee (MUR)</li>
+                    <li>Mexican peso (MXN)</li>
+                    <li>Nepalese rupee (NPR)</li>
+                    <li>New Zealand dollar (NZD)</li>
+                    <li>Norwegian krone (NOK)</li>
+                    <li>Omani rial (OMR)</li>
+                    <li>Pakistani rupee (PKR)</li>
+                    <li>Peruvian sol (PEN)</li>
+                    <li>Philippine peso (PHP)</li>
+                    <li>Polish zloty (PLN)</li>
+                    <li>Qatari riyal (QAR)</li>
+                    <li>Russian ruble (RUB)</li>
+                    <li>Saudi Arabian riyal (SAR)</li>
+                    <li>Singapore dollar (SGD)</li>
+                    <li>South African rand (ZAR)</li>
+                    <li>Sri Lankan rupee (LKR)</li>
+                    <li>Swedish krona (SEK)</li>
+                    <li>Swiss franc (CHF)</li>
+                    <li>Thai baht (THB)</li>
+                    <li>Trinidadian dollar (TTD)</li>
+                    <li>Tunisian dinar (TND)</li>
+                    <li>U.A.E. dirham (AED)</li>
+                    <li>U.K. pound (GBP)</li>
+                    <li>U.S. dollar (USD)</li>
+                    <li>Uruguayan peso (UYU)</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
