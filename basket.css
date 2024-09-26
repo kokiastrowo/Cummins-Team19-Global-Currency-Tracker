@@ -1,0 +1,119 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #a2c2e5, #e6f0f8);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+h1 {
+    color: #333;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#4a90e2, #50e3c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.form-group, .basket-item {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+label {
+    font-weight: bold;
+    width: 40%;
+    font-size: 1.1em;
+    color: #444;
+}
+
+
+/* Further reducing the width and padding to make the input boxes smaller */
+.currency-select, .weight-input, #number-of-currencies {
+    width: 25%;  /* Reduced further from 35% */
+    padding: 5px; /* Smaller padding for compact look */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.9em; /* Adjusted font-size to match the smaller box */
+    background-color: #f2f9fc;
+    transition: border-color 0.3s ease;
+}
+
+
+.currency-select:focus, .weight-input:focus, #number-of-currencies:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+
+button.generate-btn, button.calculate-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4a90e2, #50e3c2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+button:hover {
+    background: linear-gradient(135deg, #50e3c2, #4a90e2);
+}
+
+
+.basket-value {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f2f9fc;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 1.2em;
+    color: #444;
+}
+
+
+.basket-value h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
