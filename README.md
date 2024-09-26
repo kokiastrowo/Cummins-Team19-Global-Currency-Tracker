@@ -35,3 +35,6 @@ FX(Optional 1)
 1.fxrate_option.html
 2.fxrate_option.css
 3.fxrate_optional.js
+
+![image](https://github.com/user-attachments/assets/591087f2-0016-4f61-8cef-a07fa67af735)
+
