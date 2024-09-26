@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Currency Basket</title>
+    <link rel="stylesheet" href="basket.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Custom Currency Basket</h1>
+
+
+        <form id="currency-basket-form">
+            <div class="form-group">
+                <label for="number-of-currencies">How many currencies do you want to include in your basket?</label>
+                <input type="number" id="number-of-currencies" min="1" max="10" placeholder="Enter a number (1-10)" required>
+            </div>
+
+
+            <button type="button" id="generate-currencies-btn" class="generate-btn">Generate Currency Inputs</button>
+
+
+            <div id="currency-inputs-container" class="currency-inputs-container">
+                <!-- Dynamically generated currency inputs will appear here -->
+            </div>
+
+
+            <div class="form-group">
+                <label for="base-currency">Select Base Currency:</label>
+                <select id="base-currency" class="currency-select">
+                    <option value="INR">INR - Indian Rupee</option>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                </select>
+            </div>
+
+
+            <button type="button" id="calculate-basket" class="calculate-btn" style="display:none;">Calculate Basket Value</button>
+        </form>
+
+
+        <div id="basket-value" class="basket-value"></div>
+    </div>
+
+
+    <script src="basket.js"></script>
+</body>
+</html>
+
+
+
+
