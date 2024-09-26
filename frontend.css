@@ -1,0 +1,87 @@
+/* frontend.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #FFFFFF; /* White background */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+    text-align: center;
+    color: #FFDD00; /* Yellow heading color */
+}
+
+
+.currency-selection,
+.time-selection,
+.buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #003366; /* Dark blue for labels */
+}
+
+
+select,
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-width: 200px;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF4500; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #FF6347; /* Lighter red on hover */
+}
+
+
+.output {
+    margin-top: 20px;
+}
+
+
+canvas {
+    width: 100%;
+    max-height: 400px;
+}
+
+
+#basket-output,
+#risk-indicator {
+    margin-top: 20px;
+    padding: 15px;
+    background: #FFDD00; /* Yellow background */
+    border: 2px solid #FF4500; /* Red border */
+    border-radius: 5px;
+    color: #003366; /* Dark blue text */
+}
