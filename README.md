@@ -36,5 +36,12 @@ FX(Optional 1)
 2.fxrate_option.css
 3.fxrate_optional.js
 
+Output Images-
 ![image](https://github.com/user-attachments/assets/591087f2-0016-4f61-8cef-a07fa67af735)
+![image](https://github.com/user-attachments/assets/5dee7455-e395-4b16-b8da-513f5b55a22f)
+![Screenshot (951)](https://github.com/user-attachments/assets/afb18966-a57e-45ba-bdf1-857e49e171b6)
+![Uploading Screenshot (952).png…]()
+
+
+
 
